@@ -1,5 +1,6 @@
 package ru.practicum.tests;
 
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -15,6 +16,7 @@ public class AssertionsTest {
 
     }
 
+    @Tag("Демонстрация")
     @Test
     void groupedAssertions(){
         String name = "John Doe";
