@@ -29,4 +29,15 @@ public class ShowParameterizedTests {
     void addTest(int a, int b, int expected){
         assertEquals(expected, a+b);
     }
+
+    @ParameterizedTest
+    @CsvSource({
+            "Любовь, 18, Москва",
+            "Юля, 17, Питер",
+            "Саша, 30, Омск"
+    })
+    void testInlineCsv(String name, int age, String city){
+        System.out.println("Имя: " + name + " Возраст: " + age + " Город: " + city);
+    }
+
 }
